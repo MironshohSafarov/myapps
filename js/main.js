@@ -1,2 +1,10 @@
-// You can add any JavaScript functionality here if needed
-// For now, let's keep it simple as you requested
+// for Title : 
+
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+    document.title = "Come Back :(" ;
+});
+
+window.addEventListener("focus", () => {
+    document.title = docTitle;
+});
